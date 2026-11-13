@@ -129,6 +129,13 @@
   .outcomes li { padding: 13px 0 13px 30px; border-bottom: 1px solid var(--line); position: relative; color: var(--ink); font-weight: 500; font-size: 16.5px; }
   .outcomes li::before { content: ""; position: absolute; left: 2px; top: 23px; width: 12px; height: 2px; background: var(--purple); }
 
+  /* Founder */
+  .founder { background: var(--paper); }
+  .founder-grid { display: grid; grid-template-columns: minmax(0, 460px) 1fr; gap: 64px; align-items: center; }
+  .founder-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; background: var(--navy); }
+  .founder h2 { max-width: none; }
+  .founder .role { font-family: var(--mono); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--purple); margin-top: 12px; }
+
   /* Offers */
   .offers { background: var(--navy-deep); color: rgba(255,255,255,.78); }
   .offers h2 { color: var(--white); }
@@ -184,6 +191,8 @@
     .signal, .signal + .signal { padding: 24px 0 20px; border-left: 0; }
     .signal + .signal { border-top: 1px solid var(--line); }
     .approach-grid, .honest-grid { grid-template-columns: 1fr; gap: 44px; }
+    .founder-grid { grid-template-columns: 1fr; gap: 36px; }
+    .founder-photo { max-width: 520px; }
     .offer { grid-template-columns: 36px 1fr; gap: 8px 14px; }
     .offer p, .offer .price { grid-column: 2; text-align: left; }
     .offer .price { margin-top: 6px; }
@@ -208,6 +217,7 @@
     <a class="brand" href="#top">Kuanima<span>EI CONSULTING</span></a>
     <nav aria-label="Primary">
       <a href="#approach">Approach</a>
+      <a href="#founder">Founder</a>
       <a href="#offers">Programs</a>
       <a href="#results">Results</a>
       <a class="btn btn-primary" href="#contact">Start a conversation</a>
@@ -291,6 +301,17 @@
           <div role="cell">Separating skill gaps from workload and process problems before prescribing anything.</div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="founder" id="founder">
+    <div class="wrap founder-grid">
+      <img class="founder-photo" src="founder.jpg" width="2000" height="1500" loading="lazy" alt="Claudia LeBaron Islas with two others at an event at Phoenix Center for the Arts">
+      <div>
+        <span class="label">Founder</span>
+        <h2>Claudia LeBaron Islas</h2>
+        <p class="role">Founder + CEO</p>
+        <p class="lede">Kuanima is led by an engineer. Claudia brings more than 20 years of experience in industrial engineering to every engagement.</p>      </div>
     </div>
   </section>
 
